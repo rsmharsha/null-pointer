@@ -18,6 +18,7 @@ export const register = async (req, res, next) => {
         }
 
         // Step 3: Create the user
+        
         const user = await User.create(value);
 
         // Step 4: Return response without password
